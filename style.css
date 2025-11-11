@@ -264,6 +264,7 @@ h2:hover::after {
     transition: all 0.35s ease;
     box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
     position: relative;
+    z-index: 2; /* <-- CORREÇÃO APLICADA AQUI */
     overflow: hidden;
     border: none;
     letter-spacing: 0.3px;
@@ -351,7 +352,6 @@ h2:hover::after {
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* NOVO: Efeito hover para idiomas e certificados */
 .idioma:hover {
     background: #3498db;
     color: white;
