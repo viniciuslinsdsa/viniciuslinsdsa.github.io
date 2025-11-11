@@ -1,228 +1,392 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinícius Arruda - Acadêmico de Economia & IA</title>
-    <meta name="description" content="Vinícius Arruda: Acadêmico de Economia na UFMS, especialista em IA, análise de dados e automação. Certificado por AWS, Google, IBM e INSPER.">
-    <meta name="keywords" content="Vinícius Arruda, economia, IA, análise de dados, Python, automação, UFMS, YouTube, portfólio">
-    <meta name="author" content="Vinícius Arruda">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinícius Arruda - Acadêmico de Economia & IA</title>
+  <meta name="description" content="Vinícius Arruda: Acadêmico de Economia na UFMS, especialista em IA, análise de dados e automação. Certificado por AWS, Google, IBM e INSPER.">
+  <meta name="keywords" content="Vinícius Arruda, economia, IA, análise de dados, Python, automação, UFMS, YouTube, portfólio">
+  <meta name="author" content="Vinícius Arruda">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Vinícius Arruda - Portfólio">
-    <meta property="og:description" content="Acadêmico de Economia | IA | Análise de Dados | Desenvolvimento">
-    <meta property="og:image" content="Foto.jpeg">
-    <meta property="og:url" content="https://viniciusarruda.com.br">
-    <meta property="og:locale" content="pt_BR">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vinícius Arruda - Portfólio">
+  <meta property="og:description" content="Acadêmico de Economia | IA | Análise de Dados | Desenvolvimento">
+  <meta property="og:image" content="Foto.jpeg">
+  <meta property="og:url" content="https://viniciusarruda.com.br">
+  <meta property="og:locale" content="pt_BR">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vinícius Arruda - Portfólio">
-    <meta name="twitter:description" content="Acadêmico de Economia | IA | Análise de Dados">
-    <meta name="twitter:image" content="Foto.jpeg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vinícius Arruda - Portfólio">
+  <meta name="twitter:description" content="Acadêmico de Economia | IA | Análise de Dados">
+  <meta name="twitter:image" content="Foto.jpeg">
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://viniciusarruda.com.br">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vinícius Arruda",
+    "jobTitle": "Acadêmico de Economia & Especialista em IA",
+    "url": "https://viniciusarruda.com.br",
+    "sameAs": [
+      "https://www.linkedin.com/in/viniciuslinsdsa",
+      "https://github.com/viniciuslinsdsa",
+      "https://www.youtube.com/@InteligenciaCriativa"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">Vinícius Arruda</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress"></div>
 
-    <header id="home">
-        <h1>Transformando Dados em Decisões</h1>
-        <p>Acadêmico de Economia | IA | Análise de Dados | Automação</p>
-        <div class="scroll-hint"></div>
-    </header>
-
-    <div class="container">
-        <main>
-
-            <section id="projetos">
-                <h2>Meus Projetos</h2>
-
-                <div class="projeto">
-                    <p><strong>Landing Page – Encontro dos Economistas</strong><br>Sistema de inscrição com PHP, AJAX, HTML, CSS e JS para o Corecon-MS.</p>
-                    <a href="https://github.com/viniciuslinsdsa/XVENEOESTE" target="_blank" class="btn-git">
-                        GitHub
-                    </a>
-                </div>
-
-                <div class="projeto">
-                    <p><strong>PIB + Bacen API (Python CLI)</strong><br>Análise de PIB, IPCA, SELIC via API do BC. Exporta CSV, Excel, PDF.</p>
-                    <a href="https://github.com/viniciuslinsdsa/PIB_APIBCB" target="_blank" class="btn-git">
-                        GitHub
-                    </a>
-                </div>
-
-                <div class="projeto">
-                    <p><strong>IBGE API – Comparativo Global</strong><br>PIB per capita, IDH, saúde. Brasil × Mundo (10 anos).</p>
-                    <a href="https://github.com/viniciuslinsdsa/IBGE_API" target="_blank" class="btn-git">
-                        GitHub
-                    </a>
-                </div>
-
-                <div class="projeto">
-                    <p><strong>Inteligência Criativa – YouTube & Podcast</strong><br>Vídeos e áudios semanais sobre IA, economia e automação. Edição de vídeo, áudio e copywriting.</p>
-                    <a href="https://www.youtube.com/@inteligenciacriativa1" target="_blank" class="btn-git btn-youtube">
-                        YouTube
-                    </a>
-                </div>
-            </section> <section id="sobre">
-                <h2>Sobre Mim</h2>
-                <img src="Foto.jpeg" alt="Vinícius Arruda" class="foto-perfil">
-
-                <div class="sobre-texto">
-                    <p>
-                        Acadêmico de <strong>Ciências Econômicas na UFMS</strong> (2023–2026), apaixonado por pessoas e tecnologia. 
-                        Desenvolvo soluções digitais com <strong>IA, análise de dados e automação</strong> para instituições e empresas.
-                    </p>
-                    <p>
-                        Certificado por <strong>AWS, Google, IBM, FGV, INSPER e Microsoft</strong> em Desenvolvimento Web, Análise de Dados e Inteligência Artificial.
-                    </p>
-                    <p>
-                        Estágio no <strong>Conselho Regional de Economia - MS</strong>: palestrei sobre IA para centenas de pessoas, mantendo contato frequente com universidades.
-                    </p>
-                </div>
-
-                <div class="idiomas">
-                    <h3>Idiomas</h3>
-                    <div class="idiomas-grid">
-                        <div class="idioma"><strong>Português</strong> – Nativo</div>
-                        <div class="idioma"><strong>Inglês</strong> – Avançado</div>
-                        <div class="idioma"><strong>Espanhol</strong> – Intermediário</div>
-                    </div>
-                </div>
-
-                <div class="formacao">
-                    <h3>Formação & Certificados</h3>
-                    <div class="idiomas-grid"> <div class="idioma">AWS</div>
-                        <div class="idioma">Google</div>
-                        <div class="idioma">IBM</div>
-                        <div class="idioma">FGV</div>
-                        <div class="idioma">INSPER</div>
-                        <div class="idioma">Microsoft</div>
-                    </div>
-                </div>
-
-
-                <div class="links-sobre">
-                    <a href="https://www.linkedin.com/in/viniciuslinsdsa" target="_blank" class="btn-linkedin">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-            </section>
-
-            <section id="contato">
-                <h2>Entre em Contato</h2>
-                <div class="contato-container">
-                    
-                    <div class="contato-card whatsapp">
-                        <div class="contato-icon">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <h3>WhatsApp</h3>
-                        <p>(67) 99282-7037</p>
-                        <a href="https://wa.me/5567992827037?text=Olá!%20Vi%20seu%20portfólio" target="_blank" class="btn-contato whatsapp">
-                            Falar no WhatsApp
-                        </a>
-                    </div>
-
-                    <div class="contato-card">
-                        <div class="contato-icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <h3>E-mail</h3>
-                        <p>vinicius.lins@ufms.br</p>
-                        <a href="mailto:vinicius.lins@ufms.br" class="btn-contato email">
-                            Enviar E-mail
-                        </a>
-                    </div>
-
-                </div>
-            </section>
-
-        </main>
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Vinícius Arruda</a>
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link">Início</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
+  </nav>
 
-    <footer>
-        <p>© 2025 – Vinícius Arruda | Feito com dados, código e café</p>
-    </footer>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-subtitle">Acadêmico de Economia & IA</p>
+      <h1 class="hero-title">Vinícius <span>Arruda</span></h1>
+      <p class="hero-desc">
+        Transformo dados do Bacen, IBGE e mercado em insights acionáveis.<br>
+        Palestrante no Corecon-MS. Desenvolvedor de soluções com Python, PHP e APIs.
+      </p>
+      <a href="#projetos" class="hero-cta">Ver Projetos</a>
+    </div>
+  </section>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        const navLinks = document.querySelectorAll('.nav-link');
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="container">
+      <h2 class="section-title">Projetos em Destaque</h2>
+      <div class="projects-grid">
 
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+        <article class="project-card">
+          <a href="https://github.com/viniciuslinsdsa/XVENEOESTE" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver projeto no GitHub">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <h3 class="project-title">Landing Page — Encontro dos Economistas</h3>
+          <p class="project-desc">Sistema de inscrição com PHP, AJAX, HTML, CSS e JS para o Corecon-MS.</p>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">AJAX</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+        </article>
 
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
+        <article class="project-card">
+          <a href="https://github.com/viniciuslinsdsa/PIB_APIBCB" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver projeto no GitHub">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <h3 class="project-title">PIB + Bacen API (Python CLI)</h3>
+          <p class="project-desc">Análise de PIB, IPCA, SELIC via API do BC. Exporta CSV, Excel, PDF.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">API Bacen</span>
+          </div>
+        </article>
 
-        navLinks.forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    this.classList.add('active');
-                }
-            });
-        });
+        <article class="project-card">
+          <a href="https://github.com/viniciuslinsdsa/IBGE_API" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver projeto no GitHub">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <h3 class="project-title">IBGE API — Comparativo Global</h3>
+          <p class="project-desc">PIB per capita, IDH, saúde. Brasil × Mundo (10 anos).</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">API IBGE</span>
+            <span class="tag">Dados Globais</span>
+          </div>
+        </article>
 
-        window.addEventListener('scroll', () => {
-            let current = '';
-            document.querySelectorAll('section[id], header[id]').forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (scrollY >= sectionTop) current = section.getAttribute('id');
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
-            });
-            document.querySelector('.navbar').classList.toggle('navbar-scrolled', scrollY > 100);
-        });
+        <article class="project-card">
+          <a href="https://www.youtube.com/@InteligenciaCriativa" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver canal no YouTube">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <h3 class="project-title">Inteligência Criativa — YouTube & Podcast</h3>
+          <p class="project-desc">Vídeos e áudios semanais sobre IA, economia e automação. Edição de vídeo, áudio e copywriting.</p>
+          <div class="project-tags">
+            <span class="tag">YouTube</span>
+            <span class="tag">IA</span>
+            <span class="tag">Economia</span>
+          </div>
+        </article>
 
-        window.addEventListener('load', () => {
-            document.querySelector('.nav-link[href="#home"]').classList.add('active');
-        });
+      </div>
+    </div>
+  </section>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('visible');
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.container > main > section').forEach(sec => observer.observe(sec));
-    </script>
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      
+      <div class="about-content">
+        <img src="Foto.jpeg" alt="Vinícius Arruda sorrindo, usando camisa social" class="about-photo" loading="lazy">
+        
+        <div class="about-text">
+          <p>
+            Acadêmico de <strong>Ciências Econômicas na UFMS</strong> (2023—2026), apaixonado por pessoas e tecnologia. 
+            Desenvolvo soluções digitais com <strong>IA, análise de dados e automação</strong> para instituições e empresas.
+          </p>
+          <p>
+            Certificado por <strong>AWS, Google, IBM, FGV, INSPER e Microsoft</strong> em Desenvolvimento Web, Análise de Dados e Inteligência Artificial.
+          </p>
+          <p>
+            Estágio no <strong>Conselho Regional de Economia - MS</strong>: palestrei sobre IA para centenas de pessoas, mantendo contato frequente com universidades.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Idiomas</h3>
+          <div class="skill-items">
+            <span class="skill-item">Português — Nativo</span>
+            <span class="skill-item">Inglês — Avançado</span>
+            <span class="skill-item">Espanhol — Intermediário</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Certificações</h3>
+          <div class="certifications">
+            
+            <!-- AWS -->
+            <div class="cert-item" title="AWS Cloud Practitioner">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="cert-logo" aria-hidden="true">
+                <path fill="#FF9900" d="M12 2L2 7v10l10 5 10-5V7l-10-5z"/>
+                <path fill="#FFFFFF" d="M8.5 9.5l2 2 3-3 1.5 1.5-4.5 4.5-3.5-3.5z"/>
+              </svg>
+            </div>
+
+            <!-- Google -->
+            <div class="cert-item" title="Google Data Analytics">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="cert-logo" aria-hidden="true">
+                <path fill="#4285F4" d="M22.5 12.1c0-.8-.1-1.6-.2-2.4H12v4.5h5.9c-.3 1.4-1.1 2.6-2.3 3.4v2.9h3.7c2.2-2 3.5-4.9 3.5-8.4z"/>
+                <path fill="#34A853" d="M12 22.5c3.1 0 5.7-1 7.6-2.8l-3.7-2.9c-1 .7-2.3 1.1-3.9 1.1-3 0-5.5-2-6.4-4.7H1.7v3c1.9 3.7 5.8 6.3 10.3 6.3z"/>
+                <path fill="#FBBC05" d="M5.6 14.5c-.4-1.2-.6-2.5-.6-3.8s.2-2.6.6-3.8V4.1H1.7C.6 6.4 0 9.1 0 12s.6 5.6 1.7 7.9l3.9-3z"/>
+                <path fill="#EA4335" d="M12 4.5c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.7.7 15.1 0 12 0 7.5 0 3.6 2.6 1.7 6.3l3.9 3c.9-2.7 3.4-4.8 6.4-4.8z"/>
+              </svg>
+            </div>
+
+            <!-- IBM -->
+            <div class="cert-item" title="IBM">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="cert-logo" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="1.5" fill="#006699"/>
+                <rect x="2" y="7" width="20" height="1.5" fill="#006699"/>
+                <rect x="2" y="10" width="20" height="1.5" fill="#006699"/>
+                <rect x="2" y="13" width="20" height="1.5" fill="#006699"/>
+                <rect x="2" y="16" width="20" height="1.5" fill="#006699"/>
+                <rect x="2" y="19" width="20" height="1.5" fill="#006699"/>
+                <rect x="7" y="5.5" width="1" height="14" fill="white"/>
+                <rect x="16" y="5.5" width="1" height="14" fill="white"/>
+              </svg>
+            </div>
+
+            <!-- FGV -->
+            <div class="cert-item" title="FGV">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="cert-logo" aria-hidden="true">
+                <rect fill="#0033A0" width="24" height="24" rx="2"/>
+                <text x="12" y="15" font-family="Arial, sans-serif" font-weight="bold" font-size="10" fill="white" text-anchor="middle">FGV</text>
+              </svg>
+            </div>
+
+            <!-- INSPER -->
+            <div class="cert-item" title="INSPER">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="cert-logo" aria-hidden="true">
+                <rect fill="#0055A5" width="24" height="24" rx="2"/>
+                <text x="12" y="9" font-family="Arial, sans-serif" font-weight="bold" font-size="7" fill="white" text-anchor="middle">INSPER</text>
+                <rect x="4" y="12" width="16" height="2" fill="white"/>
+                <rect x="4" y="16" width="10" height="1.5" fill="white"/>
+              </svg>
+            </div>
+
+            <!-- Microsoft -->
+            <div class="cert-item" title="Microsoft">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="cert-logo" aria-hidden="true">
+                <rect x="2" y="2" width="9" height="9" fill="#F25022"/>
+                <rect x="13" y="2" width="9" height="9" fill="#7FBA00"/>
+                <rect x="2" y="13" width="9" height="9" fill="#00A4EF"/>
+                <rect x="13" y="13" width="9" height="9" fill="#FFB900"/>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="about-links">
+        <a href="https://www.linkedin.com/in/viniciuslinsdsa" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="contact-intro">Estou aberto a estágios, freelas ou parcerias em análise de dados e IA.</p>
+      
+      <div class="contact-grid">
+        <div class="contact-card whatsapp">
+          <div class="contact-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h3>WhatsApp</h3>
+          <p>(67) 99282-7037</p>
+          <a href="https://wa.me/5567992827037?text=Olá!%20Vi%20seu%20portfólio" target="_blank" rel="noopener noreferrer" class="btn-contact">
+            Falar no WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>E-mail</h3>
+          <p>vinicius.lins@ufms.br</p>
+          <a href="mailto:vinicius.lins@ufms.br" class="btn-contact">
+            Enviar E-mail
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <p>© 2025 — Vinícius Arruda | Feito com dados, código e café</p>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" aria-label="Voltar ao topo">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Mobile menu
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      const isActive = hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isActive);
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Active nav on scroll & navbar style
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const sections = document.querySelectorAll('section[id]');
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (scrollY >= sectionTop) current = section.getAttribute('id');
+      });
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) link.classList.add('active');
+      });
+
+      document.querySelector('.navbar').classList.toggle('navbar-scrolled', scrollY > 50);
+    });
+
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.querySelector('.scroll-progress').style.width = scrolled + '%';
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Intersection Observer for sections
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(sec => observer.observe(sec));
+  </script>
 </body>
-
 </html>
-
