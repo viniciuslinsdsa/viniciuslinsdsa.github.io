@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Vinícius Arruda | Undergraduate Economist & AI Solutions</title>
+    <title>Vinícius Arruda | Data Economist</title>
     
-    <meta name="description" content="Portfólio técnico de Vinícius Arruda. Profissional de Ciência de Dados e Teoria Econômica para soluções inteligentes.">
+    <meta name="description" content="Portfólio de Vinícius Lins de Souza Arruda. Acadêmico de Economia na UFMS, profissional de Ciência de Dados, Python e Inteligência Artificial aplicada a soluções econômicas.">
+    <meta name="keywords" content="Vinícius Arruda, Soluções em Economia, Cientista de Dados, Python, UFMS, Inteligência Artificial, Econo.AI">
+    <meta name="author" content="Vinícius Lins de Souza Arruda">
     
     <script type="application/ld+json">
     {
@@ -14,17 +16,132 @@
       "@type": "Person",
       "name": "Vinícius Lins de Souza Arruda",
       "alternateName": "Vinícius Arruda",
+      "url": "https://viniciuslinsdsa.github.io/",
       "jobTitle": "Data Economist",
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Universidade Federal de Mato Grosso do Sul (UFMS)"
-      }
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/viniciuslinsdsa",
+        "https://github.com/viniciuslinsdsa",
+        "https://www.youtube.com/@ainteligenciacriativa"
+      ]
     }
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =============================================
+           CERTIFICAÇÕES — estilos adicionais
+           ============================================= */
+        #certificacoes {
+            margin-top: 100px;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .cert-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 22px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .cert-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+            transform: translateY(-3px);
+        }
+
+        .cert-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .cert-icon.strategy  { background: rgba(99,  102, 241, 0.15); color: #818cf8; }
+        .cert-icon.data      { background: rgba(59,  130, 246, 0.15); color: #60a5fa; }
+        .cert-icon.ai        { background: rgba(6,   182, 212, 0.15); color: #22d3ee; }
+        .cert-icon.finance   { background: rgba(16,  185, 129, 0.15); color: #34d399; }
+        .cert-icon.tech      { background: rgba(245, 158,  11, 0.15); color: #fbbf24; }
+
+        .cert-info { min-width: 0; }
+
+        .cert-name {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-main);
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+
+        .cert-issuer {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            font-family: var(--font-code);
+        }
+
+        .cert-categories {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .cert-filter-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            font-family: var(--font-body);
+            transition: 0.2s;
+        }
+
+        .cert-filter-btn:hover,
+        .cert-filter-btn.active {
+            border-color: var(--primary);
+            color: white;
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        /* Ajuste hero — remover nome genérico do subtitle */
+        .hero-text .hero-role {
+            font-family: var(--font-code);
+            font-size: 0.9rem;
+            color: var(--accent);
+            margin-bottom: 16px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .cert-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .cert-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
 </head>
 <body>
 
@@ -37,21 +154,27 @@
         <a href="#home" class="logo">V<span>.Arruda</span></a>
         <div class="nav-links">
             <a href="#projetos">Projetos</a>
-            <a href="#certificados">Certificações</a>
-            <a href="#sobre">Trajetória</a>
+            <a href="#certificacoes">Certs</a>
+            <a href="#sobre">Stack</a>
         </div>
-        <a href="mailto:vinicius.lins@ufms.br" class="btn-hire">Contato</a>
+        <a href="#contato" class="btn-hire">Contato</a>
     </nav>
 
+    <!-- =========================================
+         HERO — headline mais direta e impactante
+         ========================================= -->
     <header id="home">
         <div class="hero-container">
             <div class="hero-text">
-                <div class="status-badge"><span class="dot"></span> Disponível para Projetos</div>
-                <h1>Economia Baseada em <br><span class="gradient-text">Dados e Inteligência.</span></h1>
-                <p>Especialista em transformar indicadores complexos em modelos preditivos e automações de alto impacto.</p>
+                <div class="status-badge"><span class="dot"></span> Open to Work</div>
+
+                <!-- Removido "Vinícius Arruda" como título — a identidade fica no logo e no contexto -->
+                <h1>Dados &amp; Economia<br><span class="gradient-text">para decisões reais.</span></h1>
+
+                <p>Modelos preditivos, automações e análise macroeconômica — da teoria à produção.</p>
                 
                 <div class="hero-actions">
-                    <a href="#projetos" class="btn-primary">Explorar Soluções <i class="fa-solid fa-arrow-down"></i></a>
+                    <a href="#projetos" class="btn-primary">Ver Projetos <i class="fa-solid fa-arrow-down"></i></a>
                     <a href="https://github.com/viniciuslinsdsa" target="_blank" class="btn-icon"><i class="fa-brands fa-github"></i></a>
                     <a href="https://linkedin.com/in/viniciuslinsdsa" target="_blank" class="btn-icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
@@ -61,14 +184,14 @@
                 <div class="terminal-window">
                     <div class="terminal-header">
                         <div class="dots"><span class="d red"></span><span class="d yellow"></span><span class="d green"></span></div>
-                        <span class="title">macro_modeling.py</span>
+                        <span class="title">economic_solutions.py</span>
                     </div>
                     <div class="terminal-body">
-                        <div class="code-line"><span class="k">import</span> data_science <span class="k">as</span> ds</div>
-                        <div class="code-line"><span class="v">metrics</span> = ds.fetch_economic_indicators()</div>
-                        <div class="code-line comment"># Aplicando modelos econométricos e ML</div>
-                        <div class="code-line"><span class="v">forecast</span> = ds.predict_pib(metrics)</div>
-                        <div class="code-line success">> Processamento concluído: 98% de precisão.</div>
+                        <div class="code-line"><span class="k">import</span> financial_engine <span class="k">as</span> fe</div>
+                        <div class="code-line"><span class="v">model</span> = fe.load_predictive_model()</div>
+                        <div class="code-line comment"># Analisando indicadores macro...</div>
+                        <div class="code-line"><span class="v">insight</span> = model.analyze_market(data)</div>
+                        <div class="code-line success">> Otimização concluída com sucesso.</div>
                     </div>
                 </div>
             </div>
@@ -77,23 +200,26 @@
 
     <main class="container">
         
+        <!-- PROJETOS -->
         <section id="projetos">
             <div class="section-header">
-                <h2>Projetos de Engenharia Econômica</h2>
+                <h2>Projetos Selecionados</h2>
                 <div class="line"></div>
             </div>
 
             <div class="bento-grid">
+                
                 <div class="bento-card featured">
                     <div class="card-content">
                         <div class="tech-row">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Artificial Intelligence</span>
+                            <span class="tech-tag">Economic Analysis</span>
                         </div>
                         <h3>Econo.AI</h3>
-                        <p>Interface inteligente que desmitifica indicadores como IPCA e Selic através de modelos de linguagem natural.</p>
+                        <p>Interface inteligente que descomplica metodologias econômicas complexas (como IPCA e Selic) através de processamento de linguagem natural.</p>
                         <div class="links-row">
                             <a href="https://viniciuslinsdsa.github.io/econo.ai/" target="_blank" class="btn-live">Live Demo <i class="fa-solid fa-bolt"></i></a>
+                            <a href="https://github.com/viniciuslinsdsa/econo.ai" target="_blank" class="link-arrow">Código ↗</a>
                         </div>
                     </div>
                     <div class="card-visual ai-visual">
@@ -104,93 +230,220 @@
                 </div>
 
                 <div class="bento-card">
+                    <div class="card-top-icon"><i class="fa-solid fa-users" style="color: #2563eb;"></i></div>
+                    <h3>XV ENEOESTE</h3>
+                    <p>Sistema oficial de gestão e inscrições para o Encontro de Economistas do Centro-Oeste (CORECON-MS). Full-stack solo: AJAX, HTML, PHP, CSS e JS.</p>
+                    <div class="tech-mini"><span>Web Development</span><span>Institutional</span></div>
+                    <div class="card-footer-links">
+                        <a href="https://www.coreconms.org.br/inscricoeseneoeste/" target="_blank" class="mini-link">Link</a>
+                        <a href="https://github.com/viniciuslinsdsa/XVENEOESTE" target="_blank" class="mini-link">Repo</a>
+                    </div>
+                </div>
+
+                <div class="bento-card">
+                    <div class="card-top-icon"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></div>
+                    <h3>Inteligência Criativa</h3>
+                    <p>Canal e podcast focados em democratizar IA e automação para otimização de fluxos de trabalho e análise de dados.</p>
+                    <div class="tech-mini"><span>AI Content</span><span>Automation</span></div>
+                    <div class="card-footer-links">
+                        <a href="https://www.youtube.com/@ainteligenciacriativa" target="_blank" class="mini-link">Assistir</a>
+                    </div>
+                </div>
+
+                <div class="bento-card">
+                    <div class="card-top-icon"><i class="fa-solid fa-piggy-bank" style="color: #10b981;"></i></div>
+                    <h3>Econovida</h3>
+                    <p>Solução para planejamento financeiro e análise de impacto econômico no dia a dia do usuário.</p>
+                    <div class="tech-mini"><span>Fintech</span><span>Analysis</span></div>
+                    <div class="card-footer-links">
+                        <a href="https://viniciuslinsdsa.github.io/econovida/" target="_blank" class="mini-link">Demo</a>
+                    </div>
+                </div>
+
+                <div class="bento-card">
                     <div class="card-top-icon"><i class="fa-solid fa-code"></i></div>
-                    <h3>Bacen CLI</h3>
-                    <p>Automação para extração e tratamento de dados estruturados das APIs do Banco Central do Brasil.</p>
-                    <div class="tech-mini"><span>Data Mining</span><span>Python</span></div>
+                    <h3>PIB + Bacen CLI</h3>
+                    <p>Ferramenta Python para consumo de dados estruturados diretamente das APIs do Banco Central.</p>
+                    <div class="tech-mini"><span>Python</span><span>Data Mining</span></div>
+                    <a href="https://github.com/viniciuslinsdsa/PIB_APIBCB" target="_blank" class="card-link-cover"></a>
                 </div>
 
                 <div class="bento-card">
                     <div class="card-top-icon"><i class="fa-solid fa-chart-pie"></i></div>
                     <h3>IBGE Global</h3>
-                    <p>Dashboard analítico para comparação socioeconômica integrando múltiplas fontes de dados.</p>
-                    <div class="tech-mini"><span>Data Viz</span><span>JSON</span></div>
+                    <p>Dashboard de análise comparativa socioeconômica integrando diversas fontes via JSON.</p>
+                    <div class="tech-mini"><span>Data Viz</span><span>API</span></div>
+                    <a href="https://github.com/viniciuslinsdsa/IBGE_API" target="_blank" class="card-link-cover"></a>
                 </div>
+
             </div>
         </section>
 
-        <section id="certificados">
+        <!-- =============================================
+             CERTIFICAÇÕES — seção nova
+             ============================================= -->
+        <section id="certificacoes">
             <div class="section-header">
-                <h2>Certificações & Qualificações</h2>
+                <h2>Certificações</h2>
                 <div class="line"></div>
             </div>
 
-            <div class="bento-grid">
-                <div class="bento-card">
-                    <div class="card-top-icon"><i class="fa-solid fa-brain" style="color: #60a5fa;"></i></div>
-                    <h4>Hard Skills & AI</h4>
-                    <ul class="cert-list">
-                        <li>Advanced Data Analytics (Google)</li>
-                        <li>Web Development Fundamentals (IBM)</li>
-                        <li>AI & Business Impact (INSPER)</li>
-                        <li>Intro to AI Ethics (Kaggle)</li>
-                        <li>Ciência de Dados (FGV)</li>
-                    </ul>
+            <div class="cert-grid">
+
+                <!-- Hard Skills / Data & Tech -->
+                <div class="cert-card">
+                    <div class="cert-icon data"><i class="fa-brands fa-google"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Advanced Data Analytics</div>
+                        <div class="cert-issuer">Google</div>
+                    </div>
                 </div>
 
-                <div class="bento-card">
-                    <div class="card-top-icon"><i class="fa-solid fa-briefcase" style="color: #10b981;"></i></div>
-                    <h4>Estratégia & Negócios</h4>
-                    <ul class="cert-list">
-                        <li>Corporate Strategies (Univ. of London)</li>
-                        <li>Gerenciamento de Projetos (Microsoft)</li>
-                        <li>Indústria 4.0 (PUC/RS)</li>
-                        <li>Análise de Negócios (Microsoft)</li>
-                    </ul>
+                <div class="cert-card">
+                    <div class="cert-icon tech"><i class="fa-brands fa-python"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Introdução à Ciência de Dados</div>
+                        <div class="cert-issuer">FGV</div>
+                    </div>
                 </div>
 
-                <div class="bento-card">
-                    <div class="card-top-icon"><i class="fa-solid fa-coins" style="color: #fbbf24;"></i></div>
-                    <h4>Finanças & Performance</h4>
-                    <ul class="cert-list">
-                        <li>Administração Financeira (INSPER)</li>
-                        <li>Excel Specialist (Microsoft Office)</li>
-                        <li>Fundamentos de Finanças (LinkedIn)</li>
-                        <li>Inglês para Finanças (TopInvest)</li>
-                    </ul>
+                <div class="cert-card">
+                    <div class="cert-icon tech"><i class="fa-brands fa-ibm"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Web Development Fundamentals</div>
+                        <div class="cert-issuer">IBM</div>
+                    </div>
                 </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon ai"><i class="fa-solid fa-brain"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Inteligência Artificial e seu Impacto nos Negócios</div>
+                        <div class="cert-issuer">INSPER</div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon ai"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Intro to AI Ethics</div>
+                        <div class="cert-issuer">Kaggle (Google)</div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon tech"><i class="fa-brands fa-microsoft"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Microsoft Office Specialist: Excel 2016</div>
+                        <div class="cert-issuer">Motim Educação</div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon tech"><i class="fa-solid fa-industry"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Indústria 4.0</div>
+                        <div class="cert-issuer">PUC/RS</div>
+                    </div>
+                </div>
+
+                <!-- Strategy & Business -->
+                <div class="cert-card">
+                    <div class="cert-icon strategy"><i class="fa-solid fa-chess"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Estratégias Corporativas</div>
+                        <div class="cert-issuer">University of London</div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon strategy"><i class="fa-solid fa-diagram-project"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Gerenciamento de Projetos</div>
+                        <div class="cert-issuer">Microsoft</div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon strategy"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Análise de Negócios</div>
+                        <div class="cert-issuer">Microsoft</div>
+                    </div>
+                </div>
+
+                <!-- Finance -->
+                <div class="cert-card">
+                    <div class="cert-icon finance"><i class="fa-solid fa-coins"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Administração Financeira</div>
+                        <div class="cert-issuer">INSPER</div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon finance"><i class="fa-solid fa-landmark"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Fundamentos de Finanças</div>
+                        <div class="cert-issuer">LinkedIn Learning</div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon finance"><i class="fa-solid fa-globe"></i></div>
+                    <div class="cert-info">
+                        <div class="cert-name">Inglês para Profissionais de Finanças</div>
+                        <div class="cert-issuer">TopInvest</div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
+        <!-- =============================================
+             SOBRE & STACK — bio encurtada, sem frase fraca
+             ============================================= -->
         <section id="sobre" class="split-section">
             <div class="bio-text">
-                <h2>Visão Técnica</h2>
-                <p class="highlight">Onde a teoria econômica encontra a escalabilidade do código.</p>
-                <p>Graduando em Economia pela UFMS, dedico minha trajetória a criar ferramentas que automatizam a tomada de decisão. Acredito que o futuro da análise econômica não reside apenas em observar dados, mas em construir sistemas capazes de interpretá-los em tempo real.</p>
+                <h2>Trajetória & Stack</h2>
+                <!-- Highlight direto ao ponto, sem repetir o nome -->
+                <p class="highlight">Economia aplicada. Dados em produção. Decisões mais rápidas.</p>
+                <p>Graduando em Economia na UFMS com certificações em Analytics, IA e Desenvolvimento Web. Já passei por empresa júnior, presidência de federação estadual e estágio no CORECON-MS — sempre no cruzamento entre teoria econômica e código.</p>
                 <div class="stats-row">
                     <div class="stat"><span class="num">3+</span><span class="label">Anos de Código</span></div>
-                    <div class="stat"><span class="num">AWS</span><span class="label">Cloud Cert</span></div>
+                    <div class="stat"><span class="num">10+</span><span class="label">Soluções Criadas</span></div>
+                    <div class="stat"><span class="num">13</span><span class="label">Certificações</span></div>
                 </div>
             </div>
             
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h4>Stack Tecnológica</h4>
+                    <h4>Core Tech</h4>
                     <ul>
-                        <li><i class="fa-brands fa-python"></i> Python (Pandas / NumPy / Scikit-learn)</li>
-                        <li><i class="fa-solid fa-database"></i> Automação de APIs & SQL</li>
-                        <li><i class="fa-solid fa-microchip"></i> LLMs & Engenharia de Prompt</li>
+                        <li><i class="fa-brands fa-python"></i> Python (Pandas / NumPy)</li>
+                        <li><i class="fa-solid fa-brain"></i> Machine Learning / LLMs</li>
+                        <li><i class="fa-solid fa-code"></i> HTML · CSS · JS · PHP</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Economics</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-chart-line"></i> Macroeconomia Quantitativa</li>
+                        <li><i class="fa-solid fa-database"></i> APIs Banco Central / IBGE</li>
+                        <li><i class="fa-solid fa-gears"></i> Automação de Processos</li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- CONTATO -->
         <section id="contato">
             <div class="cta-card">
                 <div class="cta-content">
-                    <h2>Vamos construir algo inteligente?</h2>
-                    <p>Disponível para bate-papo em ciência de dados aplicada à economia e automações.</p>
-                    <a href="https://wa.me/5567992827037" class="btn-primary white">Solicitar Proposta</a>
+                    <h2>Pronto para novos desafios?</h2>
+                    <p>Especialista no desenvolvimento de soluções em economia, IA e análise de dados.</p>
+                    <a href="https://wa.me/5567992827037" class="btn-primary white">WhatsApp</a>
+                    <a href="mailto:vinicius.lins@ufms.br" class="email-link">vinicius.lins@ufms.br</a>
                 </div>
             </div>
         </section>
@@ -198,7 +451,17 @@
     </main>
 
     <footer>
-        <div class="copy">&copy; 2026 Vinícius Arruda | Data Economics & AI.</div>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h5>Vinícius Arruda</h5>
+                <p>Soluções em Economia & Dados</p>
+            </div>
+            <div class="footer-col">
+                <a href="https://linkedin.com/in/viniciuslinsdsa">LinkedIn</a>
+                <a href="https://github.com/viniciuslinsdsa">GitHub</a>
+            </div>
+        </div>
+        <div class="copy">&copy; 2026 Vinícius Lins de Souza Arruda.</div>
     </footer>
 </body>
 </html>
