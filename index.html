@@ -6,8 +6,8 @@
     
     <title>Vinícius Arruda | Data Professional</title>
     
-    <meta name="description" content="Portfólio de Vinícius Lins de Souza Arruda. Acadêmico de Economia na UFMS, profissional de Ciência de Dados, Python e Inteligência Artificial aplicada a soluções econômicas.">
-    <meta name="keywords" content="Vinícius Arruda, Soluções em Economia, Cientista de Dados, Python, UFMS, Inteligência Artificial, Econo.AI">
+    <meta name="description" content="Portfólio de Vinícius Lins de Souza Arruda. Acadêmico de Economia na UFMS">
+    <meta name="keywords" content="Vinícius Arruda, Soluções em Economia, Desenvolvimento Web, Python">
     <meta name="author" content="Vinícius Lins de Souza Arruda">
     
     <script type="application/ld+json">
@@ -98,42 +98,6 @@
             font-family: var(--font-code);
         }
 
-        .cert-categories {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 32px;
-            flex-wrap: wrap;
-        }
-
-        .cert-filter-btn {
-            background: transparent;
-            border: 1px solid var(--border);
-            color: var(--text-muted);
-            padding: 6px 16px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            cursor: pointer;
-            font-family: var(--font-body);
-            transition: 0.2s;
-        }
-
-        .cert-filter-btn:hover,
-        .cert-filter-btn.active {
-            border-color: var(--primary);
-            color: white;
-            background: rgba(59, 130, 246, 0.1);
-        }
-
-        /* Ajuste hero — remover nome genérico do subtitle */
-        .hero-text .hero-role {
-            font-family: var(--font-code);
-            font-size: 0.9rem;
-            color: var(--accent);
-            margin-bottom: 16px;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
         @media (max-width: 768px) {
             .cert-grid { grid-template-columns: 1fr; }
         }
@@ -161,17 +125,14 @@
     </nav>
 
     <!-- =========================================
-         HERO — headline mais direta e impactante
+         HERO
          ========================================= -->
     <header id="home">
         <div class="hero-container">
             <div class="hero-text">
                 <div class="status-badge"><span class="dot"></span> Open to Work</div>
 
-                <!-- Removido "Vinícius Arruda" como título — a identidade fica no logo e no contexto -->
                 <h1>Dados &amp; Economia<br><span class="gradient-text">para decisões reais.</span></h1>
-
-                <p>Modelos preditivos, automações e análise macroeconômica — da teoria à produção.</p>
                 
                 <div class="hero-actions">
                     <a href="#projetos" class="btn-primary">Ver Projetos <i class="fa-solid fa-arrow-down"></i></a>
@@ -279,9 +240,7 @@
             </div>
         </section>
 
-        <!-- =============================================
-             CERTIFICAÇÕES — seção nova
-             ============================================= -->
+        <!-- CERTIFICAÇÕES -->
         <section id="certificacoes">
             <div class="section-header">
                 <h2>Certificações</h2>
@@ -289,8 +248,6 @@
             </div>
 
             <div class="cert-grid">
-
-                <!-- Hard Skills / Data & Tech -->
                 <div class="cert-card">
                     <div class="cert-icon data"><i class="fa-brands fa-google"></i></div>
                     <div class="cert-info">
@@ -347,7 +304,6 @@
                     </div>
                 </div>
 
-                <!-- Strategy & Business -->
                 <div class="cert-card">
                     <div class="cert-icon strategy"><i class="fa-solid fa-chess"></i></div>
                     <div class="cert-info">
@@ -372,7 +328,6 @@
                     </div>
                 </div>
 
-                <!-- Finance -->
                 <div class="cert-card">
                     <div class="cert-icon finance"><i class="fa-solid fa-coins"></i></div>
                     <div class="cert-info">
@@ -396,42 +351,46 @@
                         <div class="cert-issuer">TopInvest</div>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- =============================================
-             SOBRE & STACK — bio encurtada, sem frase fraca
-             ============================================= -->
+        <!-- SOBRE & TRAJETÓRIA (COM FOTO) -->
         <section id="sobre" class="split-section">
+            <div class="profile-container">
+                <div class="profile-glow"></div>
+                <div class="profile-wrapper">
+                    <img src="Vinicius.jpg" alt="Vinícius Arruda na B3" class="profile-img">
+                </div>
+            </div>
+
             <div class="bio-text">
                 <h2>Trajetória & Stack</h2>
-                <!-- Highlight direto ao ponto, sem repetir o nome -->
                 <p class="highlight">Economia aplicada. Dados em produção. Decisões mais rápidas.</p>
                 <p>Graduando em Economia na UFMS com certificações em Analytics, IA e Desenvolvimento Web — sempre no cruzamento entre teoria econômica e código.</p>
+                
                 <div class="stats-row">
                     <div class="stat"><span class="num">3+</span><span class="label">Anos de Código</span></div>
                     <div class="stat"><span class="num">10+</span><span class="label">Soluções Criadas</span></div>
                     <div class="stat"><span class="num">13</span><span class="label">Certificações</span></div>
                 </div>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Core Tech</h4>
-                    <ul>
-                        <li><i class="fa-brands fa-python"></i> Python (Pandas / NumPy)</li>
-                        <li><i class="fa-solid fa-brain"></i> Machine Learning / LLMs</li>
-                        <li><i class="fa-solid fa-code"></i> HTML · CSS · JS · PHP</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h4>Economics</h4>
-                    <ul>
-                        <li><i class="fa-solid fa-chart-line"></i> Macroeconomia Quantitativa</li>
-                        <li><i class="fa-solid fa-database"></i> APIs Banco Central / IBGE</li>
-                        <li><i class="fa-solid fa-gears"></i> Automação de Processos</li>
-                    </ul>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Core Tech</h4>
+                        <ul>
+                            <li><i class="fa-brands fa-python"></i> Python (Pandas / NumPy)</li>
+                            <li><i class="fa-solid fa-brain"></i> Machine Learning / LLMs</li>
+                            <li><i class="fa-solid fa-code"></i> HTML · CSS · JS · PHP</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Economics</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-chart-line"></i> Macroeconomia Quantitativa</li>
+                            <li><i class="fa-solid fa-database"></i> APIs Banco Central / IBGE</li>
+                            <li><i class="fa-solid fa-gears"></i> Automação de Processos</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
